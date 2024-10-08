@@ -1,5 +1,6 @@
 //! mstatus register
 
+#![allow(unused_variables)]
 pub use super::misa::XLEN;
 use crate::bits::{bf_extract, bf_insert};
 

@@ -72,3 +72,9 @@ set_clear_csr!(
 set_clear_csr!(
     /// Machine External Interrupt Enable
     , set_mext, clear_mext, 1 << 11);
+set_clear_csr!(
+    /// Machine Fast Interrupt 16 Enable
+    , set_mfast_16, clear_mfast_16, 1 << 16);
+set_clear_csr!(
+    /// Machine Fast Interrupt 17 Enable
+    , set_mfast_17, clear_mfast_17, 1 << 17);

@@ -30,6 +30,8 @@ pub enum Interrupt {
     MachineTimer = 7,
     SupervisorExternal = 9,
     MachineExternal = 11,
+    MachineFast16 = 16,
+    MachineFast17 = 17,
     Unknown,
 }
 
@@ -64,6 +66,8 @@ impl From<usize> for Interrupt {
             7 => Self::MachineTimer,
             9 => Self::SupervisorExternal,
             11 => Self::MachineExternal,
+            16 => Self::MachineFast16,
+            17 => Self::MachineFast17,
             _ => Self::Unknown,
         }
     }
